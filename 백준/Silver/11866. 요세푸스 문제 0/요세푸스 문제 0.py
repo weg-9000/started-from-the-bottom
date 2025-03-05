@@ -5,7 +5,6 @@ b = []
 for i in range(1,N+1):
     a.append(i)
 while len(a) != 0:
-  for _ in range(M-1):
-    a.rotate(-1)
-  b.append(str(a.popleft()))
-print(f'<{', '.join(b)}>')
+  a.rotate(-M)
+  b.append(str(a.pop()))
+print(f'<'+', '.join(b)+'>')
