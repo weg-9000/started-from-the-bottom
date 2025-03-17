@@ -1,5 +1,5 @@
 N = int(input())
-A = [0]*(10**6+1)
+A = [0]*(N+1)
 for i in range(2,N+1):
     A[i] = A[i-1] + 1
     if i%2 == 0:
